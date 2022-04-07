@@ -1,0 +1,6 @@
+pages\LoginPage.class
+pages\BankCashPage.class
+pages\DashboardPage.class
+pages\DatabasePage.class
+pages\TestBase.class
+pages\NewAccountPage.class
