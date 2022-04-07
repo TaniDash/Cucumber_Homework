@@ -115,8 +115,8 @@ public class LoginStepDefinition extends TestBase {
 	
 	@Then("^User should be able to validate account created successfully$")
 	public void user_should_be_able_to_validate_account_created_successfully() {
-	newAccountPage.verifyAccountSuccessful();
-	takeScreenshot(driver);
+		Assert.assertEquals(newAccountPage.verifyAccountSuccessful(), "Manage Accounts");
+		takeScreenshot(driver);
 	}
 	
 	@When("^User enters \"([^\"]*)\" from database$")
@@ -139,10 +139,10 @@ public class LoginStepDefinition extends TestBase {
 	}
 	
 
-@After
+/*@After
 public void tearDown() {
 	driver.close();
 	driver.quit();
-}
+}*/
 	
 }
