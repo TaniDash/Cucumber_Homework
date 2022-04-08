@@ -16,7 +16,7 @@ Feature: Techfios bank and cash New Account Functionality
     And User enters contactPerson as "<contactPerson>" in accounts page
     And User enters phone as "<Phone>" in accounts page
     And User enters internetBankingURL as "<internetBankingURL>" in accounts page
-    And User clicks on submit
+    And User clicks on "submit" button
     Then User should be able to validate account created successfully
 
     Examples: 

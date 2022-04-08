@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2291902600,
+              "duration": 2367300000,
               "status": "passed"
             },
             "match": {
@@ -18,12 +18,23 @@
         "name": "User should be able to login with valid credentials and open a new account",
         "description": "",
         "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials-and-open-a-new-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 940466700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 923149200,
+              "duration": 1006255800,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 3175670800,
+              "duration": 3155683800,
               "status": "passed"
             },
             "line": 6,
@@ -56,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 3144612400,
+              "duration": 3138749300,
               "status": "passed"
             },
             "line": 7,
@@ -77,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 4635406400,
+              "duration": 6318467100,
               "status": "passed"
             },
             "line": 8,
@@ -89,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 207239000,
+              "duration": 203152200,
               "status": "passed"
             },
             "line": 9,
@@ -101,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 2099716300,
+              "duration": 2107095400,
               "status": "passed"
             },
             "line": 10,
@@ -119,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 3474629100,
+              "duration": 3362955000,
               "status": "passed"
             },
             "line": 11,
@@ -137,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 131983200,
+              "duration": 134525600,
               "status": "passed"
             },
             "line": 12,
@@ -158,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 128384500,
+              "duration": 135346600,
               "status": "passed"
             },
             "line": 13,
@@ -179,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 124878300,
+              "duration": 112838000,
               "status": "passed"
             },
             "line": 14,
@@ -200,7 +211,7 @@
           },
           {
             "result": {
-              "duration": 115216900,
+              "duration": 146859600,
               "status": "passed"
             },
             "line": 15,
@@ -221,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 117011900,
+              "duration": 142761300,
               "status": "passed"
             },
             "line": 16,
@@ -242,7 +253,7 @@
           },
           {
             "result": {
-              "duration": 140199900,
+              "duration": 138716800,
               "status": "passed"
             },
             "line": 17,
@@ -263,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 131470200,
+              "duration": 150123200,
               "status": "passed"
             },
             "line": 18,
@@ -284,19 +295,25 @@
           },
           {
             "result": {
-              "duration": 3739929100,
+              "duration": 3850342600,
               "status": "passed"
             },
             "line": 19,
-            "name": "User clicks on submit",
+            "name": "User clicks on \"submit\" button",
             "match": {
-              "location": "LoginStepDefinition.user_clicks_on_submit()"
+              "arguments": [
+                {
+                  "val": "submit",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefinition.user_clicks_on_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 258845900,
+              "duration": 2259649300,
               "status": "passed"
             },
             "line": 20,

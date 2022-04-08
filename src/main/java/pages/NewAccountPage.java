@@ -19,6 +19,11 @@ public class NewAccountPage extends TestBase {
 	public String verifyAccountSuccessful() {
 		String manageAccHeader = MANAGE_ACCOUNT_ELEMENT.getText();
 		System.out.println(MANAGE_ACCOUNT_ELEMENT.getText());
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return manageAccHeader;
 
 	}
