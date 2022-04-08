@@ -1,6 +1,6 @@
 Feature: Techfios bank and cash New Account Functionality
 
-@BankCash1
+  @BankCash1
   Scenario Outline: User should be able to login with valid credentials and open a new account
     Given User is on techfios login page
     When User enters username as "<username>"
