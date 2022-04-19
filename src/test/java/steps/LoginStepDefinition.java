@@ -47,11 +47,6 @@ public class LoginStepDefinition extends TestBase {
 		loginPage.enterPassword(password);
 	}
 
-	@When("^User clicks on signin button$")
-	public void user_clicks_on_signin_button() {
-		loginPage.clickSignInButton();
-	}
-
 	@Then("^User should land on dashboard page$")
 	public void user_should_land_on_dashboard_page() {
 		Assert.assertEquals("Dashboard- iBilling", loginPage.getPageTitle());
@@ -61,6 +56,9 @@ public class LoginStepDefinition extends TestBase {
 	@When("^User clicks on \"([^\"]*)\" button$")
 	public void user_clicks_on_button(String button) {
 		switch (button) {
+		case "signin":
+			loginPage.clickSignInButton();
+			break;
 		case "bankCash":
 			dashboardPage.clickBankCashMenu();
 			break;

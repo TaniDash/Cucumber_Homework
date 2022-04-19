@@ -5,7 +5,7 @@ Feature: Techfios bank and cash New Account Functionality
     Given User is on techfios login page
     When User enters username as "<username>"
     When User enters password as "<password>"
-    When User clicks on signin button
+    When User clicks on "signin" button
     Then User should land on dashboard page
     When User clicks on "bankCash" button
     And User clicks on "newAccount" button
